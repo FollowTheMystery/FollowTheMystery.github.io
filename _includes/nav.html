@@ -1,9 +1,9 @@
 	<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-		<button class="dl-trigger">Open Menu</button>
+		<button class="dl-trigger">Меню</button>
 		<ul class="dl-menu">
-			<li><a href="{{ site.url }}/">Home</a></li>
+			<li><a href="{{ site.url }}/">На главную</a></li>
 			<li>
-				<a href="#">About</a>
+				<a href="#">Описание</a>
 				<ul class="dl-submenu">
 					<li>
 						<img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
@@ -62,6 +62,9 @@
                     {% if site.youtube-channel %}<li>
                         <a href="https://youtube.com/channel/{{ site.youtube-channel }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-youtube"></i> Youtube</a>
                     </li>{% endif %}
+                     {% if site.discord %}<li>
+                        <a href="https://discord.com/channels/{{ site.discord }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-discord"></i> Discord</a>
+                    </li>{% endif %}
                     {% if site.soundcloud %}<li>
                         <a href="http://soundcloud.com/{{ site.soundcloud }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-soundcloud"></i> SoundCloud</a>
                     </li>{% endif %}
@@ -81,12 +84,12 @@
                         <a href="xmpp:{{ site.xmpp }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-lightbulb-o"></i> XMPP</a>
                     </li>{% endif %}
                     {% if site.hackernews %}<li>
-                        <a href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i> Hacker News</a>
+                        <a href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i> Новости</a>
                     </li>{% endif %}
 				</ul><!-- /.dl-submenu -->
 			</li>
 			<li>
-				<a href="#">Posts</a>
+				<a href="#">Посты</a>
 				<ul class="dl-submenu">
 					<li><a href="{{ site.url }}/posts/">All Posts</a></li>
 					<li><a href="{{ site.url }}/tags/">All Tags</a></li>
