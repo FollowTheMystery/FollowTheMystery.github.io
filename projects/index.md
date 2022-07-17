@@ -1,6 +1,6 @@
 ---
-layout: Проекты
-title: All Projects
+layout: all Projects
+title: Проекты
 excerpt: ""
 comments: false
 ---
