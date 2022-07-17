@@ -10,7 +10,7 @@
 						<h4>{{ site.title }}</h4>
 						<p>{{ site.description }}</p>
 					</li>
-					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">Читать далее</span></a></li>
+					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">Подробнее</span></a></li>
 					{% if site.email %}<li>
                         <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> Почта</a>
                     </li>{% endif %}
@@ -62,9 +62,6 @@
                     {% if site.youtube-channel %}<li>
                         <a href="https://youtube.com/channel/{{ site.youtube-channel }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-youtube"></i> Youtube</a>
                     </li>{% endif %}
-                     {% if site.discord %}<li>
-                        <a href="https://discord.com/channels/{{ site.discord }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-discord"></i> Discord</a>
-                    </li>{% endif %}
                     {% if site.soundcloud %}<li>
                         <a href="http://soundcloud.com/{{ site.soundcloud }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-soundcloud"></i> SoundCloud</a>
                     </li>{% endif %}
@@ -85,6 +82,9 @@
                     </li>{% endif %}
                     {% if site.hackernews %}<li>
                         <a href="https://news.ycombinator.com/user?id={{ site.hackernews }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-hacker-news"></i> Новости</a>
+                    </li>{% endif %}
+                    {% if site.discord %}<li>
+                        <a href="https://discord.com/channels/{{ site.discord }}" target="_blank" rel="noopener noreferrer"><i class='fab fa-discord'>fa-discord</i> Discord</a>
                     </li>{% endif %}
 				</ul><!-- /.dl-submenu -->
 			</li>
