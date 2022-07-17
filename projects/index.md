@@ -1,6 +1,6 @@
 ---
-layout: project
+layout: Проекты
 title: All Projects
-excerpt: "A List of Projects"
+excerpt: ""
 comments: false
 ---
